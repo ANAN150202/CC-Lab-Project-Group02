@@ -11,7 +11,7 @@ Welcome to the official repository for the **Compiler Construction Lab Project**
 
 This repository serves as the **official project template and instruction repository** for the Compiler Construction Laboratory course.
 
-Every project group **must fork this repository** and complete the entire project inside their own GitHub repository.
+Every project group **must fork this repository** and complete the entire project inside their own GitHub repository. This repository is provided only as a project template to help you organize your work. It does not contain the implementation of any required compiler phase. Every group is responsible for designing and implementing their own solution.
 
 
 
