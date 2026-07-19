@@ -55,7 +55,7 @@ int line_num = 1;
 ")"             { printf("DELIM: )\n"); }
 ";"             { printf("DELIM: ;\n"); }
 
-. {printf("CHAR: %s\n", yytext);}
+.               { fprintf(stderr, "Lexical Error at line %d: unexpected character '%s'\n", line_num, yytext);} 
 %%
 
 int main() {
