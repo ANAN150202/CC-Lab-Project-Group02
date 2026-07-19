@@ -30,6 +30,31 @@ int line_num = 1;
 [0-9]+\.[0-9]+  { printf("FLOAT: %s\n", yytext); }
 
 [0-9]+          { printf("INTEGER: %s\n", yytext); }
+
+"<="            { printf("RELOP: <=\n"); }
+">="            { printf("RELOP: >=\n"); }
+"=="            { printf("RELOP: ==\n"); }
+"!="            { printf("RELOP: !=\n"); }
+"<"             { printf("RELOP: <\n"); }
+">"             { printf("RELOP: >\n"); }
+
+"&&"            { printf("LOGOP: &&\n"); }
+"||"            { printf("LOGOP: ||\n"); }
+"!"             { printf("LOGOP: !\n"); }
+
+"+"             { printf("OP: +\n"); }
+"-"             { printf("OP: -\n"); }
+"*"             { printf("OP: *\n"); }
+"/"             { printf("OP: /\n"); }
+"%"             { printf("OP: %%\n"); }
+"="             { printf("ASSIGN: =\n"); }
+
+"{"             { printf("DELIM: {\n"); }
+"}"             { printf("DELIM: }\n"); }
+"("             { printf("DELIM: (\n"); }
+")"             { printf("DELIM: )\n"); }
+";"             { printf("DELIM: ;\n"); }
+
 . {printf("CHAR: %s\n", yytext);}
 %%
 
