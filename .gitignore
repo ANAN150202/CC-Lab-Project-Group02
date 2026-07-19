@@ -26,6 +26,8 @@ a.out
 compiler
 main
 *.out
+lexer
+parser
 
 # ==================================================
 # Shared Libraries
